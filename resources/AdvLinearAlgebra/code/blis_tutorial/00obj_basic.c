@@ -12,14 +12,14 @@ int main(int argc, char** argv) {
 	m = 4; n = 3;
 	rs = 1; cs = 6;
 	bli_obj_create( dt, m, n, rs, cs, &a1);
-	inspect(a1);
+	// inspect(a1);
 }
 
-void inspect(obj_t a8) {
-	printf( "datatype            %s\n", bli_dt_string( bli_obj_dt( &a8 ) ) );
-	printf( "datatype size       %d bytes\n", ( int )bli_dt_size( bli_obj_dt( &a8 ) ) );
-	printf( "m dim (# of rows):  %d\n", ( int )bli_obj_length( &a8 ) );
-	printf( "n dim (# of cols):  %d\n", ( int )bli_obj_width( &a8 ) );
-	printf( "row stride:         %d\n", ( int )bli_obj_row_stride( &a8 ) );
-	printf( "col stride:         %d\n", ( int )bli_obj_col_stride( &a8 ) );
-}
+// void inspect(obj_t a8) {
+// 	printf( "datatype            %s\n", bli_dt_string( bli_obj_dt( &a8 ) ) );
+// 	printf( "datatype size       %d bytes\n", ( int )bli_dt_size( bli_obj_dt( &a8 ) ) );
+// 	printf( "m dim (# of rows):  %d\n", ( int )bli_obj_length( &a8 ) );
+// 	printf( "n dim (# of cols):  %d\n", ( int )bli_obj_width( &a8 ) );
+// 	printf( "row stride:         %d\n", ( int )bli_obj_row_stride( &a8 ) );
+// 	printf( "col stride:         %d\n", ( int )bli_obj_col_stride( &a8 ) );
+// }
