@@ -8,7 +8,7 @@ CC = gcc
 CFLAGS = -O2 -g -I$(BLIS_INC)
 LINKER = $(CC)
 
-OBJS = 00obj_basic.c
+OBJS = 01obj_attach.c
 
 all: $(OBJS)
 	$(LINKER) $(CFLAGS) $(OBJS) $(BLIS_LIB) $(OTHER_LIBS) -o a.out
