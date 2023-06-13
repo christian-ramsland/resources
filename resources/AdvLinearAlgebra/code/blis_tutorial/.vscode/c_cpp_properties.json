@@ -4,8 +4,9 @@
             "name": "Linux",
             "includePath": [
                 "${workspaceFolder}/**",
-                "/usr/local/include/blis/"
-            ],
+                "/usr/local/include/blis/",
+                "/usr/local/include/tensorflow"
+                       ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",
             "cStandard": "c17",

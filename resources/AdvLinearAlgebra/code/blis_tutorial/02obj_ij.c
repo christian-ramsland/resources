@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "blis.h"
+#include <tensorflow/c/c_api.h>
 
 void init_dmatrix_by_rows(dim_t m, dim_t n, double* a, inc_t rs, inc_t cs);
 void init_dmatrix_by_cols(dim_t m, dim_t n, double* a, inc_t rs, inc_t cs);
@@ -8,6 +9,10 @@ void init_dobj_by_cols(obj_t* a);
 void init_zobj_by_cols(obj_t* a);
 
 int main(int argc, char** argv) {
+	printf("Hello from TensorFlow C library version %s\n", TF_Version());
+
+
+
     obj_t a1, a2, a3;
     num_t dt;
     dim_t m, n;
