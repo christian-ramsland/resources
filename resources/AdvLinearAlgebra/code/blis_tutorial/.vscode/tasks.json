@@ -2,7 +2,7 @@
     "tasks": [
         {
             "label": "cmake",
-            "type": "shell",
+            "type": "process",
             "command": "make",
             "group": {
                 "kind": "build",
@@ -11,7 +11,7 @@
         },
         {
             "label": "run made file",
-            "type": "shell",
+            "type": "process",
             "command": "${workspaceFolder}/a.out",
             "dependsOn": "cmake"
         }

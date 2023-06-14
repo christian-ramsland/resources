@@ -11,7 +11,7 @@ CFLAGS = -O2 -g -I$(BLIS_INC) -I$(TF_INC)
 LINKER = $(CC)
 
 OBJS_UNUSED = 00obj_basic.c 01obj_attach.c
-OBJS = 02obj_ij.c
+OBJS = Week1.c
 
 all: $(OBJS)
 	$(LINKER) $(CFLAGS) $(OBJS) $(BLIS_LIB) $(OTHER_LIBS) -o a.out
